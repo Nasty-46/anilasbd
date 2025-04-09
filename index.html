@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Książka z Obrazkami</title>
+  <title><3</title>
   <style>
     body {
       margin: 0;
@@ -82,7 +82,6 @@
 <body>
   <div class="book">
     <div id="bookSpreads">
-      <!-- Spready będą tutaj wstawiane -->
     </div>
     <div class="controls">
       <button onclick="prevSpread()">← Previous</button>
@@ -102,10 +101,10 @@
       spread.style.transform = `translateX(${i * 100}%)`;
 
       if (i < totalSpreads - 1) {
-        // Każda rozkładówka to jeden obraz zawierający dwie strony
-        spread.innerHTML = `<img src="img${i+1}.png" alt="Rozkładówka ${i + 1}" />`;
+       
+        spread.innerHTML = `<img src="img${i+1}.png" alt="Page ${i + 1}" />`;
       } else {
-        // Ostatnia strona z odtwarzaczem muzyki
+        
         spread.classList.add('music-spread');
         spread.innerHTML = `
           <div>
